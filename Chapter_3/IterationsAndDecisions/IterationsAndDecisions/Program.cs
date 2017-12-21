@@ -272,10 +272,10 @@ namespace IterationsAndDecisions
           Console.WriteLine("Your choice is an integer {0}.",i);
           break;
         case string s:
-          Console.WriteLine("Your choice is a string. {0}", s);
+          Console.WriteLine("Your choice is a string {0}.", s);
           break;
         case decimal d:
-          Console.WriteLine("Your choice is a decimal. {0}", d);
+          Console.WriteLine("Your choice is a decimal {0}.", d);
           break;
         default:
           Console.WriteLine("Your choice is something else");
