@@ -30,6 +30,17 @@ namespace RefTypeValTypeParams
     {
         static void Main(string[] args)
         {
+            // Passing ref-types by value.
+            Console.WriteLine("***** Passing Person object by value *****");
+            Person fred = new Person("Fred", 12);
+            Console.WriteLine("\nBefore by value call, Person is:");
+            fred.Display();
+
+            SendAPersonByValue(fred);
+            Console.WriteLine("\nAfter by value call, Person is:");
+            fred.Display();
+            Console.WriteLine();
+
             // Passing ref-types by ref.
             Console.WriteLine("***** Passing Person object by reference *****\n");
             Person mel = new Person("Mel", 23);
