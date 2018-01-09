@@ -58,7 +58,11 @@ namespace ObjectOverrides
     public override bool Equals(object obj) => obj?.ToString() == ToString();
 
     // Return a hash code based on a point of unique string data.
-    public override int GetHashCode() => SSN.GetHashCode();
+    // In this example the SSN field is not initialized properly thus not appropriate for calculate hash.
+    //public override int GetHashCode() => SSN.GetHashCode();
+
+    // Return a hash code based on the person's ToString() value.
+    public override int GetHashCode() => ToString().GetHashCode();
 
     #endregion
   }
