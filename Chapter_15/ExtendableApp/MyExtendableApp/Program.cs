@@ -15,7 +15,7 @@ namespace MyExtendableApp
         [STAThread]
         static void Main(string[] args)
         {
-            Console.WriteLine("***** Welcome to MyTypeViewer *****");
+            Console.WriteLine("***** Welcome to MyExtendableApp *****");
             do
             {
                 Console.WriteLine("\nWould you like to load a snapin? [Y,N]");
